@@ -13,7 +13,9 @@ class PostController extends Controller
         return view('welcome', ['posts'=>$posts]);
     }
 
-    public function detailPost(){
-        return view('detail');
+    public function detailPost(Post $post){
+        //route model binding
+
+        return view('detail', ['post'=>$post]);
     }
 }

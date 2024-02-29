@@ -102,14 +102,15 @@
         <div class="col">
           <div class="card shadow-sm">
             <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="{{asset($post -> image)}}" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-            <title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/></img>
+              <title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/>
+            </img>
 
             <div class="card-body">
               <p class="card-text">{{$post -> title}}</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                  <a href="/detail/{{$post -> id}}"><button type="button" class="btn btn-sm btn-outline-secondary">View</button></a>
+                  <!--button type="button" class="btn btn-sm btn-outline-secondary">Edit</button-->
                 </div>
                 <small class="text-muted">9 mins</small>
               </div>
