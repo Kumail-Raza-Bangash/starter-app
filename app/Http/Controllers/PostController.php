@@ -8,9 +8,9 @@ use App\Models\Post;
 class PostController extends Controller
 {
     public function index(){
-        $post = Post::get(); // or $post = Post::all();
+        $posts = Post::get(); // or $post = Post::all();
         //dd($post); //dum death
-        return view('welcome', ['post'=>$post]);
+        return view('welcome', ['posts'=>$posts]);
     }
 
     public function detailPost(){
